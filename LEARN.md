@@ -1,7 +1,7 @@
 # Launching your own NFT
 Welcome to this quest! Here you will learn what an NFT is and how to launch your own.
 
-__Subquest 1: Tokens, ERC20s and NFTs__
+## Tokens, ERC20s and NFTs__
 
 In the Ethereum network, there is the main currency called Ether. This currency is used as money, and it is also used to pay for network fees when you want to make transactions on the network.
 
@@ -9,7 +9,7 @@ Besides Ether, the Ethereum network allows you to create any number of sub-curre
 
 Besides ERC-20, there exist in the Ethereum network another kind of token which are called Non-Fungible Tokens or NFTs for short.  An NFT or Non-Fungible Token is a __unique token__, which is also managed by a Smart Contract running in the Ethereum Blockchain. They are built using the ERC-721 standard.
 
-__Subquest 2: Build and deploy your own ERC-721 Token using remix. __
+## Build and deploy your own ERC-721 Token using remix. __
 
 Now we are going to deploy our own ERC-721 token inside a virtual environment using Remix.
 
@@ -21,6 +21,7 @@ We are going to use OpenZeppelin’s implementation of ERC-721 as the basis of o
 
 Let’s create a new file with .sol extension (for example, MyNFT.sol) and paste the following code:
 
+```
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
@@ -76,6 +77,7 @@ contract MyNFT is ERC721 {
     }
 
 }
+```
 
 This is a very simple token that inherited from OpenZeppelin’s ERC-721 implementation which you can see here: [https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 
@@ -127,7 +129,7 @@ Click on the “>” symbol on the left of “MyNFT at 0x…” and you will see
 
 ![](https://qb-content-staging.s3.ap-south-1.amazonaws.com/public/fb231f7d-06af-4aff-bca3-fd51cb633f77/e214fdb0-9cc8-4f77-b844-b1543a998a09.jpg)
 
-__Subquest 3: Real-World Applications of NFTs__
+## Real-World Applications of NFTs__
 
 These unique or non-fungible tokens solve a different kind of problem. They are used, for example, to:
 
@@ -171,7 +173,7 @@ These unique or non-fungible tokens solve a different kind of problem. They are 
 
 [https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/73881852512585366829397768378841787039894851789237845675354749252870395133953](https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/73881852512585366829397768378841787039894851789237845675354749252870395133953)
 
-__Subquest 4: Interact with your NFT using Remix.__
+## Interact with your NFT using Remix.__
 
 We are now going to use remix to simulate API calls to the main functions of our recently created NFT token. If you do not see your deployed contract (probably because you closed the browser at some point) just go back, compile and deploy again.
 
@@ -250,7 +252,7 @@ Click again the “ownerOf” button. Notice the following output:
 
 { "0": "address: 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2" }
 
-__Subquest 5: Deploy your token to a public test network__
+## Deploy your token to a public test network__
 
 Use a Testnet Faucet to get some toy ether.
 
@@ -286,7 +288,7 @@ Once it deploys, you will see a MetaMask notification in the upper right.
 
 ![](https://qb-content-staging.s3.ap-south-1.amazonaws.com/public/fb231f7d-06af-4aff-bca3-fd51cb633f77/797c1ee1-7611-4b3c-b447-c8c13d1a364e.jpg)
 
-__Subquest 6: Interact with your NFT using a wallet__
+## Interact with your NFT using a wallet__
 
 We will use MetaMask mobile to interact with your NFT.
 
